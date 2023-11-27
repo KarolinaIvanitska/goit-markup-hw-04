@@ -382,7 +382,51 @@ color: var(--text-color);
 }
 /*=====END-SECTION-4=====*/
 
+/*=====SECTION-FIVE=====*/
+.section-five{
+    color:var(--backgroud-color);
+    padding-top: 120px;
+    padding-bottom: 120px;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1. 11;
+    letter-spacing: 0.72px;
+    text-transform: capitalize;
+    margin-bottom: 72px;
+}
 
+.list-customer-section-five{
+    display: flex;
+    gap:24px;
+}
+
+.item-customer-section-five{
+    width: calc((100% - 120px) / 6);
+    height: 88px;
+    transition:border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.link-section-five{
+    color: var(--backgroud-color);
+    width: 100%;
+    height: 100%
+    border-radius: 4px;
+    border: 1px solid  #8E8F99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.link-section-five:hover,
+.link-section-five:focus{
+    border-color: #404bbf;
+    color: #404bbf;
+}
+ 
+.svg-section-five{
+    fill: currentColor;
+}
 
 /*=====FOOTER=====*/
 .footer {
@@ -402,7 +446,6 @@ color: var(--text-color);
     line-height: 1.17;
     display: inline-block;
     margin-bottom: 17px;
-    
 }
 
 .logo-part-two-footer {
@@ -420,6 +463,43 @@ color: var(--text-color);
     letter-spacing: 0.02em;
     max-width: 264px;
 
+}
+
+.container-footer {
+    display: flex;
+    align-items: baseline;
+    margin-right: 120px;
+}
+
+.paragraph-footer-socialmedia {
+        color: var(--body-color);
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        margin-bottom: 16px;
+}
+
+.list-footer-socialmedia {
+    display:flex;
+    gap:16px;
+
+}
+
+.item-footer-socialmedia {
+    width:40px;
+    height:40px;
+    transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.link-item-footer {
+width: 100%;
+height:100%;
+border-radius: 50%;
+background-color: var(--firstword-text-color);
+display:flex;
+align-items: center;
+justify-content: center;
 }
 /*=====END-FOOTER=====*/
 
