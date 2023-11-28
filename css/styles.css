@@ -47,6 +47,8 @@ ol, ul{
     margin-bottom: 0;
     padding-left: 0;
 }
+
+
 .visually-hidden{
     position: absolute;
     width: 1px;
@@ -430,6 +432,8 @@ ol, ul{
 .item-customer-section-five{
     width: calc((100% - 120px) / 6);
     height: 88px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-section-five{
@@ -443,8 +447,7 @@ ol, ul{
     border-radius: 4px;
 }
 
-.link-section-five:hover,
-.link-section-five:focus{
+.link-section-five:hover, .link-section-five:focus{
     border-color: #404bbf;
     color: #404bbf;
 }
@@ -462,8 +465,9 @@ ol, ul{
 .container-all-footer{
     align-items: baseline;
     display: flex;
+    width: 1140px;
+     height: 312px;
 }
-
 
 .logo-footer {
     color: var(--firstword-text-color);
@@ -481,7 +485,6 @@ ol, ul{
 
 .logo-part-two-footer {
     color: #f4f4fd;
-    
 }
 
 .paragraph-footer {
@@ -492,21 +495,23 @@ ol, ul{
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    max-width: 264px;
-
+    width: 264px;
+    height: 112px;
 }
 
 .container-footer {
-    max-width: 264px;
+   width:264px;
+   height:112px;
+    margin-right: 120px;
 }
 
 .paragraph-footer-socialmedia {
-        color: var(--body-color);
-        font-size: 16px;
-        font-weight: 500;
-        line-height: 1.5;
-        letter-spacing: 0.02em;
-        margin-bottom: 16px;
+    color: var(--body-color);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    margin-bottom: 16px;
 }
 
 .list-footer-socialmedia {
@@ -519,7 +524,7 @@ ol, ul{
 .item-footer-socialmedia {
     width:40px;
     height:40px;
-    transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-item-footer {
@@ -530,6 +535,14 @@ background-color: var(--firstword-text-color);
 display:flex;
 align-items: center;
 justify-content: center;
+}
+
+.link-item-footer:focus,.link-item-footer:hover{
+    background-color: #31d0aa;
+}
+
+.svg-footer{
+    fill:var(--svg-color);
 }
 
 .container-footer-sm {
@@ -708,8 +721,7 @@ justify-content: center;
 
 .list-portfolio-two {
     width: calc((100% - 48px) / 3);
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
+    transition:box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-card {
@@ -761,6 +773,7 @@ justify-content: center;
 .paragraph-portfolio:focus,
 .paragraph-portfolio:hover {
 transform: translateY(0%);
+
 }
 
 .picture-hover {
