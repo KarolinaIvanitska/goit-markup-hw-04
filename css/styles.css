@@ -365,8 +365,11 @@ ol, ul{
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.item-svg-icons-background:hover,
-.item-svg-icons-background:focus {
+.item-svg-icons-background:hover {
+    background-color: #404bbf;
+}
+
+.item-svg-icons-background:focus{
     background-color: #404bbf;
 }
 
@@ -432,7 +435,7 @@ ol, ul{
 .item-customer-section-five{
     width: calc((100% - 120px) / 6);
     height: 88px;
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    transition-property: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -447,7 +450,12 @@ ol, ul{
     border-radius: 4px;
 }
 
-.link-section-five:hover, .link-section-five:focus{
+.link-section-five:hover {
+    border-color: #404bbf;
+    color: #404bbf;
+}
+
+.link-section-five:focus {
     border-color: #404bbf;
     color: #404bbf;
 }
@@ -500,9 +508,7 @@ ol, ul{
 }
 
 .container-footer {
-   width:264px;
-   height:112px;
-    margin-right: 120px;
+   margin-right: 120px;
 }
 
 .paragraph-footer-socialmedia {
@@ -535,6 +541,7 @@ background-color: var(--firstword-text-color);
 display:flex;
 align-items: center;
 justify-content: center;
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-item-footer:focus,.link-item-footer:hover{
@@ -678,12 +685,7 @@ justify-content: center;
 }
 
 .ul-portfolio-one {
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-portfolio {
@@ -721,7 +723,8 @@ justify-content: center;
 
 .list-portfolio-two {
     width: calc((100% - 48px) / 3);
-    transition:box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property:box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-card {
@@ -772,8 +775,7 @@ justify-content: center;
 
 .paragraph-portfolio:focus,
 .paragraph-portfolio:hover {
-transform: translateY(0%);
-
+    transform: translateY(0%);
 }
 
 .picture-hover {
