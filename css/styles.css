@@ -18,6 +18,7 @@
     --white-color: #F4F4FD;
     --body-color: #FFFFFF;
     --svg-color:#f4f4fd;
+    --a-color:#8e8f99;
 }
 
 body {
@@ -113,17 +114,18 @@ ol, ul{
     display: block;
     position: relative;
     color: #404bbf;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-menu::after {
-    content:для встановлення вмісту, який має бути відображений в псевдоелементі;
+    content:"text";
     position:absolute;
     left: 0;
     bottom: -1px;
     height: 4px;
     background-color: #404bbf;
     border-radius: 2px;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   
 }
 
 .link-menu:hover,
@@ -360,7 +362,7 @@ ol, ul{
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.item-svg-icons-background:hover,
+.item-svg-icons-background:hover
 .item-svg-icons-background:focus {
     background-color: #404bbf;
 }
@@ -421,26 +423,26 @@ ol, ul{
 .list-customer-section-five{
     display: flex;
     gap:24px;
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .item-customer-section-five{
     width: calc((100% - 120px) / 6);
     height: 88px;
-    transition:border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-section-five{
-    color: var(--backgroud-color);
+    color:var(--a-color);
     width: 100%;
-    height: 100%
-    border-radius: 4px;
+    height: 100%;
     border: 1px solid  #8E8F99;
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 4px;
 }
 
-.link-section-five:hover,
+.link-section-five:hover
 .link-section-five:focus{
     border-color: #404bbf;
     color: #404bbf;
@@ -455,6 +457,12 @@ ol, ul{
     background-color: var(--backgroud-color);
     padding: 100px 0;
 }
+
+.container-all-footer{
+    align-items: baseline;
+    display: flex;
+}
+
 
 .logo-footer {
     color: var(--firstword-text-color);
@@ -488,9 +496,7 @@ ol, ul{
 }
 
 .container-footer {
-    display: flex;
-    align-items: baseline;
-    margin-right: 120px;
+    max-width: 264px;
 }
 
 .paragraph-footer-socialmedia {
@@ -503,9 +509,10 @@ ol, ul{
 }
 
 .list-footer-socialmedia {
-    display:flex;
-    gap:16px;
-
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
 }
 
 .item-footer-socialmedia {
@@ -523,8 +530,73 @@ display:flex;
 align-items: center;
 justify-content: center;
 }
+
+.container-footer-sm {
+    margin-left: 120px;
+    margin-top: 100px;
+    margin-right: 692px;
+    margin-bottom: 132px;
+}
 /*=====END-FOOTER=====*/
 
+/*======MODAL-WINDOW=====*/
+
+.container-modal-window{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(46, 47, 66, 0.4);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-window{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%) scale(1);
+    width: 408px;
+    min-height: 584px;
+    background: #fcfcfc;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button-close-modal-window{
+    position: absolute;
+    top: 24px;
+    right:24px;
+    width: 24px;
+    height:24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e7e9fc;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button-close-modal-window:hover,
+.button-close-modal-window:focus{
+    background-color: #404bbf;
+    border: none;
+    fill: #ffffff;
+}
+
+.svg-modal-button{
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.is-hidden {
+    visibility: hidden;
+    pointer-events: none;
+
+}
 
 
 
