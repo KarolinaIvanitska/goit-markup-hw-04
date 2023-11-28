@@ -367,12 +367,10 @@ ol, ul{
 
 .item-svg-icons-background:hover {
     background-color: #404bbf;
-    color: #404bbf;
 }
 
 .item-svg-icons-background:focus {
     background-color: #404bbf;
-    color: #404bbf;
 }
 
 .name-job {
@@ -452,16 +450,20 @@ ol, ul{
     border-radius: 4px;
 }
 
+.link-section-five:focus {
+    border-color: #404bbf;
+    color: #404bbf;
+}
+
 .link-section-five:hover {
     border-color: #404bbf;
     color: #404bbf;
 }
 
-.link-section-five:focus {
-    border-color: #404bbf;
-    color: #404bbf;
+.item-svg-icons-background{
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
- 
+
 .svg-section-five{
     fill: currentColor;
 }
@@ -736,8 +738,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-card:focus,
-.portfolio-card:hover{
+.portfolio-card:focus, .portfolio-card:hover{
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     transform: translateY(0%);
 }
