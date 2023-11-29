@@ -370,6 +370,7 @@ ol, ul{
 
 .item-svg-icons-background:hover,
 .item-svg-icons-background:focus {
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     background-color: #404bbf;
 }
 
@@ -450,6 +451,7 @@ ol, ul{
 }
 
 .link-section-five:focus,.link-section-five:hover {
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     color: #404bbf;
     border-color: #404bbf;
 }
