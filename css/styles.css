@@ -351,6 +351,7 @@ ol, ul{
 .item-svg-icons{
     width:40px;
     height:40px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .item-svg-icons-background{
@@ -362,16 +363,12 @@ ol, ul{
     align-items: center;
     justify-content: center;
     margin-bottom: 8px;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.item-svg-icons-background:hover {
+.item-svg-icons-background:hover,.item-svg-icons-background:focus {
     background-color: #404bbf;
 }
 
-.item-svg-icons-background:focus {
-    background-color: #404bbf;
-}
 
 .name-job {
     padding: 32px 0;
@@ -429,14 +426,11 @@ ol, ul{
 .list-customer-section-five{
     display: flex;
     gap:24px;
-    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .item-customer-section-five{
     width: calc((100% - 120px) / 6);
     height: 88px;
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-section-five{
@@ -448,13 +442,19 @@ ol, ul{
     align-items: center;
     justify-content: center;
     border-radius: 4px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-section-five:hover,
 .link-section-five:focus {
     border-color: #404bbf;
-    color: #404bbf;
 }
+
+.link-section-five:hover,
+.link-section-five:focus{
+    color:  #404bbf;
+}
+
 
 .item-svg-icons-background{
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
