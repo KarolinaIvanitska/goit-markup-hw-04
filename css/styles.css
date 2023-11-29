@@ -450,12 +450,8 @@ ol, ul{
     border-radius: 4px;
 }
 
+.link-section-five:hover,
 .link-section-five:focus {
-    border-color: #404bbf;
-    color: #404bbf;
-}
-
-.link-section-five:hover {
     border-color: #404bbf;
     color: #404bbf;
 }
