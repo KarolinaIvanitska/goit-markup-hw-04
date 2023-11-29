@@ -406,7 +406,7 @@ ol, ul{
 
 /*=====SECTION-FIVE=====*/
 .section-five{
-    color:var(--a-color);
+    /*color:var(--a-color);*/
     padding-top: 120px;
     padding-bottom: 120px;
     text-align: center;
@@ -524,7 +524,7 @@ ol, ul{
 .item-footer-socialmedia {
     width:40px;
     height:40px;
-    transition-property: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-item-footer {
