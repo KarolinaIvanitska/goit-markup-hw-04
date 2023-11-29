@@ -336,6 +336,7 @@ ol, ul{
     border-radius: 0px 0px 4px 4px;
     width: calc((100% - 72px) / 4);
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .list-socialmedia-icons {
@@ -346,6 +347,7 @@ ol, ul{
     margin-bottom: 32px;
     margin-right: 4px;
     margin-left: 4px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .item-svg-icons{
@@ -365,7 +367,7 @@ ol, ul{
     margin-bottom: 8px;
 }
 
-.item-svg-icons-background:hover,.item-svg-icons-background:focus {
+.item-svg-icons-background:hover, .item-svg-icons-background:focus {
     background-color: #404bbf;
 }
 
@@ -375,7 +377,7 @@ ol, ul{
 }
 
 .svg-section-four{
-    color: currentColor;
+   fill: #f4f4fd;
 }
 
 .header-section-four {
@@ -720,17 +722,13 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 
 .portfolio-card {
-    /*display: block;
-        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-            background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-            border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),*/
-            box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    display: block;
 }
 
 .portfolio-card:focus .paragraph-portfolio-hover,
 .portfolio-card:hover .paragraph-portfolio-hover{
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-    transform: translateY(0%);
+    /*transform: translateY(0%);*/
 }
 
 .container-portfolio {
