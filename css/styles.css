@@ -368,13 +368,12 @@ ol, ul{
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.item-svg-icons-background:hover {
+.item-svg-icons-background:hover,.item-svg-icons-background:focus {
     background-color: #404bbf;
 }
 
-.item-svg-icons-background:focus{
-    background-color: #404bbf;
-}
+.item-svg-icons-background:focus
+    
 
 .name-job {
     padding: 32px 0;
@@ -452,7 +451,7 @@ ol, ul{
         color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.link-section-five:focus, .link-section-five:hover {
+.link-section-five:focus,.link-section-five:hover {
     color: #404bbf;
     border-color: #404bbf;
 }
