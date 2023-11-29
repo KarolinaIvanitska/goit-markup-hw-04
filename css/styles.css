@@ -372,6 +372,11 @@ ol, ul{
     background-color: #404bbf;
 }
 
+.item-svg-icons:hover, .item-svg-icons:focus{
+    background-color: #404bbf;
+}
+
+
 .name-job {
     padding: 32px 0;
 }
