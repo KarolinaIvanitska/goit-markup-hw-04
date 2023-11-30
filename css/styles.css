@@ -372,6 +372,12 @@ ol, ul{
     background-color: #404bbf;
 }
 
+.svg-section-four:focus{
+    background-color: #404bbf;
+}
+
+
+
 .name-job {
     padding: 32px 0;
 }
