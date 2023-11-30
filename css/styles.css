@@ -459,6 +459,12 @@ ol, ul{
     border-color: #404bbf;
 }
 
+.link-section-five .svg-section-five:focus,
+.link-section-five .svg-section-five:hover{
+    color: #404bbf;
+    border-color: #404bbf;
+}
+
 .svg-section-five {
     fill: currentColor;
 }
